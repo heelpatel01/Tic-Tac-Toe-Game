@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tic-Tac-Toe Game</title>
+    <script src="script.js"></script>
+    <style>
+body {
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #282c36;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #fff;
+}
+
+.game-container {
+    display: grid;
+    grid-template-columns: repeat(3, 100px);
+    grid-gap: 10px;
+}
+
+.col {
+    background: linear-gradient(45deg, #2980b9, #3498db);
+    border-radius: 10px;
+    height: 100px;
+    width: 100px;
+    border: solid 2px #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: xx-large;
+    cursor: pointer;
+    transition: background 0.3s, color 0.3s;
+}
+
+.col:hover {
+    background: linear-gradient(45deg, #2c3e50, #34495e);
+}
+
+.draw, .winner {
+    font-size: 24px;
+    text-align: center;
+    margin-top: 20px;
+}
+
+    </style>
+</head>
+<body>
+    <div class="row">
+        <div class="col" id="0" onclick="handleClick(this)"></div>
+        <div class="col" id="1" onclick="handleClick(this)"></div>
+        <div class="col" id="2" onclick="handleClick(this)"></div>
+    </div>
+    <div class="row">
+        <div class="col" id="3" onclick="handleClick(this)"></div>
+        <div class="col" id="4" onclick="handleClick(this)"></div>
+        <div class="col" id="5" onclick="handleClick(this)"></div>
+    </div>
+    <div class="row">
+        <div class="col" id="6" onclick="handleClick(this)"></div>
+        <div class="col" id="7" onclick="handleClick(this)"></div>
+        <div class="col" id="8" onclick="handleClick(this)"></div>
+    </div>
+</body>
+</html>
